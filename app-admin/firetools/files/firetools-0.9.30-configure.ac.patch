@@ -1,0 +1,36 @@
+--- firetools-0.9.30.orig/configure.ac	2015-10-12 17:13:07.623038157 +0300
++++ firetools-0.9.30/configure.ac	2015-10-12 17:13:11.999038028 +0300
+@@ -32,7 +32,7 @@
+ 		AC_MSG_ERROR([*** Please install Qt5 svg support - apt-get install libqt5svg5 ***])
+ 	fi
+ 
+-# Arch Linux 64bit
++# Arch Linux 64bit and Gentoo 64bit
+ elif test -f /usr/lib/libQt5Core.so
+ then
+         echo "Found qt5 library in /usr/lib directory"
+@@ -40,12 +40,24 @@
+         if test -f /usr/lib/qt/plugins/imageformats/libqsvg.so
+         then
+                 echo "Found qt5 svg library"
++        elif test -f /usr/lib64/qt5/plugins/imageformats/libqsvg.so
++        then
++                echo "Found qt5 svg library"
++        elif test -f /usr/lib/qt5/plugins/imageformats/libqsvg.so
++        then
++                echo "Found qt5 svg library"
+         else
+                 AC_MSG_ERROR([*** Please install Qt5 svg support - pacman -S qt5-svg ***])
+         fi
+         if test -f /usr/lib/qt/plugins/iconengines/libqsvgicon.so
+         then
+                 echo "Found qt5 svg icon library"
++        elif test -e /usr/lib64/qt5/plugins/iconengines/libqsvgicon.so
++        then
++                echo "Found qt5 svg icon library"
++        elif test -e /usr/lib/qt5/plugins/iconengines/libqsvgicon.so
++        then
++                echo "Found qt5 svg icon library"
+         else
+                 AC_MSG_ERROR([*** Please install Qt5 svg support - pacman -S qt5-svg ***])
+         fi
