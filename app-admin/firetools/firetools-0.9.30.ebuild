@@ -35,8 +35,7 @@ src_prepare() {
 
 src_configure() {
 	eautoreconf
-	econf
-	#econf \
-	#	$(use_enable qt4)
-	#	$(use_enable qt5)
+	econf\
+		$(use_with qt4)\
+		$(use_with qt5)
 }
