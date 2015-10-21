@@ -13,7 +13,7 @@ ESVN_REPO_URI="http://reaver-wps.googlecode.com/svn/trunk/"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND="net-libs/libpcap
