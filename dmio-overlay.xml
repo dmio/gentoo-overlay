@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<layman>
+    <overlay
+        type = "git"
+        src  = "https://github.com/dmio/gentoo-overlay.git"
+        contact = "y.dmitry@gmail.com"
+        status  = "unofficial"
+        name = "dmio-overlay">
+        <link>
+            https://github.com/dmio/gentoo-overlay
+        </link>
+        <description>
+          Just my gentoo overlay.
+        </description>
+    </overlay>
+</layman>
