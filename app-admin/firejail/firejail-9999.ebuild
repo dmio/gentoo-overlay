@@ -15,14 +15,14 @@ if [[ ${PV} == 9999* ]]; then
 	EXPERIMENTAL="true"
 else
 	SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+	KEYWORDS="~x86 ~amd64"
 fi
 
 inherit base ${GIT_ECLASS}
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
-IUSE="+seccomp +bash-completion +man +doc"
+IUSE="+seccomp bash-completion man doc"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
