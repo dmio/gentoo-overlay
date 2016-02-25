@@ -1,0 +1,4 @@
+#
+# mask because of regression
+~app-admin/firejail-0.9.36
+~app-admin/firejail-0.9.38
