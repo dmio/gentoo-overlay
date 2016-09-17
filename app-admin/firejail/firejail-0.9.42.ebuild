@@ -46,7 +46,7 @@ src_configure() {
 		$(use_enable seccomp)
 		$(use_enable userns)
 		$(use_enable whitelist)
-		$(use x11 && echo --enable-x11)
+		$(use X && echo --enable-x11)
 		$(use network-restricted && echo --enable-network=restricted)
 		)
 	econf "${myargs[@]}"
