@@ -1,1 +1,1 @@
-move app-admin/firejail::dmio-overlay sys-apps/firejail::dmio-overlay
+move app-admin/firejail sys-apps/firejail
