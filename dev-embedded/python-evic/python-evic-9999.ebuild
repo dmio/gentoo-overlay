@@ -3,8 +3,9 @@
 # $Id$
 
 EAPI=5
+PYTHON_COMPAT=( python3_3 python3_4 python3_5 )
 
-inherit distutils git-r3
+inherit distutils-r1 git-r3
 
 DESCRIPTION="Evic is a USB programmer for devices based on the Joyetech Evic VTC Mini"
 HOMEPAGE="https://github.com/Ban3/python-evic"
