@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit qmake-utils
+inherit qmake-utils xdg-utils gnome2-utils
 
 DESCRIPTION="A Qt and C++ GUI for radare2 reverse engineering framework"
 HOMEPAGE="http://www.radare.org"
@@ -27,4 +27,16 @@ src_configure() {
 
 src_install() {
 	emake INSTALL_ROOT="${D}" install
+}
+
+pkg_postinst() {
+        xdg_desktop_database_update
+        xdg_mimeinfo_database_update
+        gnome2_icon_cache_update
+}
+
+pkg_postrm() {
+        xdg_desktop_database_update
+        xdg_mimeinfo_database_update
+        gnome2_icon_cache_update
 }
