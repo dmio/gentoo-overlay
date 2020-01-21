@@ -10,13 +10,13 @@ EGIT_REPO_URI="https://github.com/Dead2/zlib-ng.git"
 if [[ ${PV} == 9999* ]]; then
 	SRC_URI=""
 	KEYWORDS=""
-    GIT_ECLASS="git-r3"
+	GIT_ECLASS="git-r3"
 	EXPERIMENTAL="true"
 fi
 
 inherit cmake-utils ${GIT_ECLASS}
 
-LICENSE=""
+LICENSE="ZLIB"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
