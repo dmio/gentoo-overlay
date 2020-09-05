@@ -21,8 +21,7 @@ IUSE=""
 DEPEND="dev-python/bitarray
 		dev-python/binstruct
 		dev-python/hidapi
-		dev-python/click
-		dev-python/pytest-runner"
+		dev-python/click"
 RDEPEND="${DEPEND}"
 
 
